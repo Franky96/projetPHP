@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>California</title>
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="searchbar">
+    <input id="searchinput" type="search" placeholder="Search">
+</section>
+<div class="page_Wrapper">
+    <span id="formulaireConnexion_clos"></span>
+    <span id="formulaireInscription_clos"></span>
+    <section class="slide0" id="slide0">
+        <div class="imageDefond" id="imagefond">
+            <div class="opacity"></div>
+            <div id="formulaireInscription">
+                <form id="formulaire">
+                    <h2>Inscription</h2>
+                    <input class="formulaire" type="text" id="Nom" name="login" required="required" placeholder="Name" pattern="">
+                    <input class="formulaire" type="text" id="login" name="login" required="required" placeholder="Nickname">
+                    <input class="formulaire" type="email" id="email" name="email" required="required" placeholder="Email">
+                    <input class="formulaire" type="password" id="password" name="password" required="required" placeholder="Password">
+                    <input  type="submit" id="submit" value="Inscription">
+                </form>
+
+                <a href="#formulaireInscription" class="ouvrir">Sign in</a>
+                <a href="#formulaireInscription_clos" class="fermer">Close</a>
+            </div>
+            <div id="formulaireConnexion">
+                <div id="formulaireCout">
+                    <form id="formulaireC">
+                        <h2>Connexion</h2>
+                        <input class="formulaire" type="text" id="loginC" name="login" required="required" placeholder="Nickname">
+                        <input class="formulaire" type="password" id="passwordC" name="password" required="required" placeholder="Password">
+                        <input  type="submit" id="submitC" value="Connexion">
+                    </form>
+
+                    <a href="#formulaireConnexion" class="ouvrir">Connection</a>
+                    <a href="#formulaireConnexion_clos" class="fermer">Close</a>
+                </div>
+            </div>
+            <div class="contentCenter">
+                <div id="logo"><a href="#"><img src="images/logo.png" alt="logo"> </a></div>
+                <hr>
+                <h2>We make honest products,<br>
+                    <span>durable and timeless</span></h2>
+                <a id="browseProduct" href="#slide1">Browse our products</a>
+            </div>
+            <div class="aside_container">
+                <div id="icons">
+                    <span id="span2"><i class="fa fa-search"></i></span>
+                    <span id="span1" onclick="animMenu();"><i id="menuicon" class="fa fa-bars fa-6"></i></span>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li id="menu_up1">Collection</li>
+                        <li id="menu_up2">Videos</li>
+                        <li id="menu_up3">Map & Coordinates</li>
+                    </ul>
+                </div>
+            </div>
+            <a id="scrolldown" href="#slide1" data-action="scroll">
+                <i id="i_scrolldown" class="fa fa-chevron-down fa-lg"></i>
+            </a>
+        </div>
+
+    </section>
+    <section id="slide1" class="slide1">
+        <div id="ProductTitle">
+            <h2>Featured Products</h2>
+        </div>
+        <div id="ProductWrapper">
+            <div id="ProductContent">
+                <div class="produit">
+                    <a href="#"><img src="images/one_grande.jpg"></a>
+
+                    <div class="info">
+                        <div class="metas">
+                            <div class="title">Sof Merino</div>
+                            <div>
+                                <span class="price">$240.00</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <a href="#"><img src="images/two_grande.jpg"></a>
+
+                    <div class="info">
+                        <div class="metas">
+                            <div class="title">Blue Shirt</div>
+                            <div>
+                                <span class="price">$220.00</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <a href="#"><img src="images/two-b_fc3d9ec2-b86d-4762-b4d6-41a720563107_grande.jpg"></a>
+
+                    <div class="info">
+                        <div class="metas">
+                            <div class="title">Marled Grey Shirt</div>
+                            <div>
+                                <span class="price">$120.00</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <a href="#"><img src="images/two-c_2ee6ddb8-d636-4eb4-9f59-a1e058f37cc3_grande.jpg"></a>
+
+                    <div class="info">
+                        <div class="metas">
+                            <div class="title">Blue Sweater</div>
+                            <div>
+                                <span class="price">$80.00</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <a href="#"><img src="images/15_grande.jpeg"></a>
+
+                    <div class="info">
+                        <div class="metas">
+                            <div class="title">Blue Sweater</div>
+                            <div>
+                                <span class="price">$200.000</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <a href="#"><img src="images/16_grande.jpeg"></a>
+
+                    <div class="info">
+                        <div class="metas">
+                            <div class="title">Blue Trousers</div>
+                            <div>
+                                <span class="price">$115.00</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <a href="#"><img src="images/22_17c2e942-0ebd-417c-b82b-baa8d46027fc_grande.jpeg"></a>
+
+                    <div class="info">
+                        <div class="metas">
+                            <div class="title">Red Hat and Worf</div>
+                            <div>
+                                <span class="price">$45.00</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="produit">
+                    <a href="#"><img src="images/23_grande.jpeg"></a>
+
+                    <div class="info">
+                        <div class="metas">
+                            <div class="title">Summer Sandals</div>
+                            <div>
+                                <span class="price">$70.00</span>
+                            </div>
+                        </div>
+                        <div class="status">
+                            <a href="#">Buy</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a id="browseProduct2" target="_blank" href="moreproduct.html" >Browse our products</a>
+
+        </div>
+    </section>
+    <section id="slide2" class="slide2">
+        <div id="vid1">
+            <video width="700" height="400" controls>
+                <source src="media_files/big_buck_bunny.mp4" type="video/mp4"/>
+                <source src="media_files/big_buck_bunny.ogv" type="video/ogg"/>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="vid2">
+            <video width="700" height="400" controls>
+                <source src="media_files/big_buck_bunny.mp4" type="video/mp4">
+                <source src="media_files/big_buck_bunny.ogv" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="bottom_slide2">
+            <h1>California & Style</h1>
+            <div><a id="scrollup2" href="#slide0">
+                <i id="i_scrollup2" class="fa fa-chevron-down fa-lg"></i>
+            </a></div>
+        </div>
+    </section>
+    <section id="slide3" class="slide3">
+        <div id="map"><div id="map-canvas"></div></div>
+        <div id="map_info">
+            <div id="map_coor">
+                <h1>Our coordinates</h1>
+                <dl>
+                    <dt>Transamerica Pyramid</dt>
+                    <dt>600 Montgomery Street,</dt>
+                    <dt>San Francisco, CA 94111,</dt>
+                    <dt>United States</dt>
+                </dl>
+            </div>
+        </div>
+        <div class="scrollup"><a id="scrollup3" href="#slide0">
+            <i id="i_scrollup3" class="fa fa-chevron-down fa-lg"></i>
+        </a></div>
+    </section>
+    <div class="content_footer">
+        <div class="content1">
+            <div>
+                <ul>
+                    <li>Navigate</li>
+                    <li><a>Catalog</a></li>
+                    <li><a>About US</a></li>
+                    <li><a>News</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Theme Help</li>
+                    <li><a>Faq</a></li>
+                    <li><a>Documentation</a></li>
+                    <li><a>Theme styles</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Contact</li>
+                    <li><i class="fa fa-twitter"></i><a>Twitter</a></li>
+                    <li><i class="fa fa-envelope-o"></i><a>Email</a></li>
+                    <li><i class="fa fa-phone"></i><a>+1 917 (123) 4567</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Social</li>
+                    <li><i class="fa fa-facebook"></i><a>Facebook</a></li>
+                    <li><i class="fa fa-google-plus"></i><a>Google+</a></li>
+                    <li><i class="fa fa-youtube"></i><a>Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content2">
+            <h4>Newsletter</h4>
+            <form>
+                <input type="email" required="required" placeholder="Enter your email address..">
+                <input type="submit" value="ok">
+            </form>
+        </div>
+        <div class="content3">
+            <i class="fa fa-copyright"></i>
+            <span>Powred by Veilleux Francis & Bouach Omar</span>
+        </div>
+    </div>
+
+</div>
+
+<script src="script/moreproduct.js"></script>
+<script src="script/jquery-1.11.1.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="script/main.js"></script>
+<script>
+
+</script>
+
+</body>
+
+</html>

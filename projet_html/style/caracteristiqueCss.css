@@ -1,0 +1,283 @@
+
+/*******************************search Bar*****/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.searchbar {
+    height: 50px;
+    display: none;
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+
+.searchbar input {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding-left: 2px;
+    font-size: 20px;
+    display: block;
+    outline: none;
+    padding-right: 44px;
+    margin-right: 50px;
+    color: #313131;
+}
+
+/********************Aside Container******************/
+.aside_container {
+    margin-right: 48px;
+    margin-top: 17px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#icons {
+    margin-left: 116px;
+
+}
+
+#icons #span1 {
+    margin-left: 20px;
+}
+
+#span1, #span2:hover {
+    cursor: pointer;
+}
+
+#icons span {
+    font-size: 25px;
+    color: rgb(193, 193, 193);
+
+}
+
+.menu ul li {
+    list-style-type: none;
+    line-height: 50px;
+    font-size: 30px;
+    border-bottom: dashed 1px #000000;
+    color: #313131;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    color: #7d7d7d;
+}
+
+.menu {
+    display: none;
+}
+
+/***************************/
+
+header {
+    background-color: #3e4645;
+    height: 60px;
+    position: relative;
+}
+
+#containerHeader {
+    margin-left: 70px;
+}
+
+header div {
+    height: 100%;
+
+}
+
+header div h1 {
+    line-height: 200%;
+    margin: 0;
+}
+
+h1 a img {
+    height: 23px;
+    position: relative;
+    top: 1px;
+}
+
+h1 a {
+
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+div h1 span {
+    color: rgb(193, 193, 193);
+    font-family: Lato sans-serif;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+/************contenu***************/
+#contenuWrapper {
+    margin-top: 30px;
+    margin-left: 100px;
+    height: 583px;
+}
+
+#contenuWrapper div img {
+    width: 400px;
+    height: 545px;
+}
+
+#contenuWrapper div:first-child {
+
+    width: 35%;
+    float: left;
+
+}
+
+div #title {
+    display: block;
+    font-size: 30px;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    height: 36px;
+    margin: 10px 0 5px;
+    text-align: left;
+    color: rgb(97, 97, 97);
+}
+
+div #prix {
+    clear: both;
+    color: rgb(0, 0, 0);
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+div #moreInformation {
+    -webkit-font-smoothing: antialiased;
+    height: 105px;
+    box-sizing: border-box;
+    color: rgb(145, 145, 145);
+    display: block;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#browseProduct2 {
+    display: block;
+    width: 200px;
+    height: 43px;
+    line-height: 43px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(0, 90, 255);
+    border: none;
+    float: left;
+    margin-right: 20px;
+
+}
+
+#metasInformation {
+    width: 500px;
+    display: inline-block;
+}
+/*****************footer***************/
+
+.content_footer {
+    height: 373px;
+    background: #3e4645;
+    clear: both;
+}
+
+.content1 {
+    margin-right: 100px;
+    margin-left: 200px;
+    height: 40%;
+}
+
+.content2 {
+    margin-right: 100px;
+    margin-left: 239px;
+    margin-top: 50px;
+}
+
+.content2 h4 {
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+    font-family: georgia sans-serif;
+}
+
+.content2 input:first-child {
+    margin-right: 11px;
+    padding: 4px 8px 3px;
+    border: 0;
+    min-height: 0;
+    min-width: 240px;
+    font-size: 15px;
+    color: #818181;
+    width: 224px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.content2 input:last-child {
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: Lato sans-serif;
+    border: 1px solid white;
+    width: 33px;
+    height: 33px;
+    color: white;
+    background: transparent;
+}
+
+.content1 div {
+    margin-top: 40px;
+    float: left;
+    margin-right: 100px;
+
+}
+
+.content1 div ul li:first-child {
+    margin-bottom: 13px;
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+    font-family: georgia sans-serif;
+}
+
+.content1 div ul li {
+    margin-bottom: 6px;
+    margin-right: 5px;
+}
+
+.content1 div ul li {
+    list-style: none;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+
+div ul li i {
+    margin-right: 12px;
+
+}
+
+.content3 {
+    text-align: center;
+    margin-top: 37px;
+
+    color: #9f9f9f;
+    font-family: Lato sans-serif;
+}
+
