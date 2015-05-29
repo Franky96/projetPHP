@@ -1,1 +1,1 @@
-Site pour la vente de différents produits tel que vêtement, articles de maison et autre.
+Site pour la vente de diffÃ©rents produits tel que vÃªtement, articles de maison et autre.
