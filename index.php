@@ -4,6 +4,9 @@
     <?php include 'head.php'; ?>
 <body>
 
+
+
+
 <?php include 'script.php' ?>
 </body>
 </html>
