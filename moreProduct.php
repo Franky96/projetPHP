@@ -16,6 +16,7 @@ echo '<html>
 
         <body>';
 require_once('headerMoreproduct.php');
+Head("/ Collection");
 
 echo '<div id="ProductTitle">
              <h2>Featured Products</h2>

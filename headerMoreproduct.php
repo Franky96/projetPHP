@@ -5,7 +5,8 @@
  * Date: 31/05/2015
  * Time: 12:39
  */
-
+function Head($title)
+{
 echo '<header>
     <div class="aside_container">
         <div id="icons">
@@ -28,7 +29,10 @@ echo '<header>
             <a href="index.html">
                 <img src="images/logo.png"/>
             </a>
-            <span>/ Collection</span>
+            <span> ' . $title . '</span>
         </h1>
     </div>
 </header>';
+}
+
+?>
