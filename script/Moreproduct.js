@@ -92,3 +92,11 @@ function animMenu() {
         $('.menu').slideUp();
     }
 }
+// fonction qui envoi l'url pour filtrer avec les catégories
+function geturl(element) {
+    categ = document.getElementsByClassName('sel')[0].value;
+    url = "moreProduct.php?categ=" + categ;
+    console.log(url);
+    window.location.href = url;
+
+}

@@ -12,6 +12,8 @@ echo '<html>
         <title>moreProduct</title>
          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
          <link rel="stylesheet" href="style/moreProductCss.css" type="text/css">
+
+
         </head>
 
         <body>';
@@ -19,18 +21,43 @@ require_once('headerMoreproduct.php');
 Head("/ Collection");
 
 echo '<div id="ProductTitle">
-             <h2>Featured Products</h2>
+  <div class="select">
+    <select class="sel" name="update[]" onchange="geturl(this)";>
+        <option value="All" selected="selected">ALL Products</option>
+        <option value="Beds">Beds</option>
+        <option value="Shirts">Shirts</option>
+        <option value="Trousers">Trousers</option>
+        <option value="Drawers">Drawers</option>
+        <option value="Chairs">Chairs</option>
+        <option value="Decoration">Decoration</option>
+        <option value="Bags">Bags</option>
+        <option value="Tents">Tents</option>
+        <option value="Boxes">Boxes</option>
+        <option value="Shoes">Shoes</option>
+    </select>
+
+    <div class="iconDownn">
+        <i class="fa fa-chevron-down"></i>
+    </div>
          </div>
+             <h2>Featured Products</h2>
+
+
+</div>
          <div id="ProductWrapper">
          <div id="ProductContent">
          <div id="premiere_page">';
 
-$compteur = 1;
 
-foreach ($articles as $nomarticle => $contenu) {
-
-    echo " <div class='produit'>
-                     <a href='caracteristique.php?" . $nomarticle . "'><img src='" . $contenu[1] . "'></a>
+if (isset($_GET['categ'])) {
+    $categ = $_GET['categ'];
+    if ($categ == "ALL Products") {
+        affiche_tout($articles);
+    } else {
+        foreach ($articles as $nomarticle => $contenu) {
+            if ($categ == $contenu[3]) {
+                echo " <div class='produit'>
+                     <a href='caracteristique.php?article=" . $nomarticle . "'><img src='" . $contenu[1] . "'></a>
 
                       <div class='info'>
                           <div class='metas'>
@@ -40,13 +67,22 @@ foreach ($articles as $nomarticle => $contenu) {
                           </div>
                          </div>
                       <div class='status'>
-                        <a href='#'>Buy</a>
+                        <a href='caracteristique.php?article=" . $nomarticle . "'>Buy</a>
                     </div>
                      </div>
           </div>";
+            }
+
+        }
+    }
 
 }
 
+if ($_SERVER["REQUEST_URI"] == $_SERVER['PHP_SELF']) {
+
+    affiche_tout($articles);
+
+}
 
 echo '</div>
          </div>
@@ -66,6 +102,27 @@ echo ' <script src="script/jquery-1.11.1.min.js"></script>
 </body>
 </html>';
 
+function affiche_tout($tableau)
+{
+    foreach ($tableau as $nomarticle => $contenu) {
 
+        echo " <div class='produit'>
+                     <a href='caracteristique.php?article=" . $nomarticle . "'><img src='" . $contenu[1] . "'></a>
+
+                      <div class='info'>
+                          <div class='metas'>
+                          <div class='title'>$nomarticle</div>
+                          <div>
+                              <span class='price'>$contenu[0]</span>
+                          </div>
+                         </div>
+                      <div class='status'>
+                        <a href='caracteristique.php?article=" . $nomarticle . "'>Buy</a>
+                    </div>
+                     </div>
+          </div>";
+
+    }
+}
 ?>
 

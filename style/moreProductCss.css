@@ -18,14 +18,19 @@ body {
 
 }
 
+#ProductTitle {
+    margin-bottom: 44px;
+}
+
 #ProductTitle h2 {
     height: auto;
-    margin-top: 20px;
     font-size: 40px;
     color: #313131;
-    width: 100%;
+    width: 500px;
+    margin: auto;
     text-align: center;
-    font-family: Lato;
+    padding-top: 16px;
+
 
 }
 
@@ -104,6 +109,7 @@ body {
     clear: both;
     border: none;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 /*************traitement pagination************/
@@ -322,3 +328,59 @@ div h1 span {
     font-size: 28px;
     font-weight: 300;
 }
+
+/*********************composant filtre***********/
+.select {
+    width: 174px;
+    height: 44px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #eee;
+    border-radius: 4px;
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    margin-left: 135px;
+
+}
+
+.sel {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    position: relative;
+    -webkit-appearance: none;
+    font-weight: 300;
+    font-size: 18px;
+    color: #999;
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    padding: 10px 45px 10px 12px;
+    background-color: transparent;
+    z-index: 2;
+    /*margin: 0;padding: 0;*/
+}
+
+.iconDownn {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    font-size: 1.33333333em;
+    z-index: 1;
+}
+
+.select:hover {
+    background-color: #1681b4;
+
+}
+
+.select:hover .sel {
+    color: #4F191A;
+}
+
+.select:hover .iconDownn {
+    color: white;
+}
+
+/*************************************************/
