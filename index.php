@@ -1,6 +1,6 @@
 <?php
 
-session_start()
+session_start();
 ?>
 
 
@@ -29,12 +29,18 @@ session_start()
             </div>
             <div class="aside_container">
                 <div id="icons">
-                    <span id="span3"  <?php $a = json_decode($_SESSION['PANIER'], true);
-                    if (count($a) == 0) {
+                    <span id="span3"  <?php if (isset($_SESSION['PANIER'])) {
+                        $a = json_decode($_SESSION['PANIER'], true);
+                        if (count($a) == 0) {
+                            echo 'style="display: none"';
+                        }
+                    } else {
                         echo 'style="display: none"';
-                    } ?> ><a href="cart.php "><i class="fa fa-shopping-cart"></i>Cart
-                            (<?php $a = json_decode($_SESSION['PANIER'], true);
-                            echo(count($a)); ?>)</a></span>
+                    } ?> ><a href="cart.php "><i
+                                class="fa fa-shopping-cart"></i>Cart(<?php if (isset($_SESSION['PANIER'])) {
+                                $a = json_decode($_SESSION['PANIER'], true);
+                                echo(count($a));
+                            } ?>)</a></span>
                     <span id="span2"><i class="fa fa-search"></i></span>
                     <span id="span1" onclick="animMenu()" ;><i id="menuicon" class="fa fa-bars fa-6"></i></span>
                 </div>

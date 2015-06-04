@@ -11,13 +11,19 @@ echo '<header>
     <div class="aside_container">
         <div id="icons">
               <span id="span3"  ';
-    $a = json_decode($_SESSION['PANIER'], true);
-    if (count($a) == 0) {
+    if (isset($_SESSION['PANIER'])) {
+        $a = json_decode($_SESSION['PANIER'], true);
+        if (count($a) == 0) {
+            echo 'style="display: none"';
+        }
+    } else {
         echo 'style="display: none"';
     }
     echo '><a href="cart.php "><i class="fa fa-shopping-cart"></i>Cart (';
-    $a = json_decode($_SESSION['PANIER'], true);
-    echo(count($a));
+    if (isset($_SESSION['PANIER'])) {
+        $a = json_decode($_SESSION['PANIER'], true);
+        echo(count($a));
+    };
     echo ')</a></span>
             <span id="span2"><i class="fa fa-search"></i></span>
             <span id="span1" onclick="animMenu()" ;><i id="menuicon" class="fa fa-bars fa-6"></i></span>

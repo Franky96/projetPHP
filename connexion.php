@@ -5,7 +5,7 @@
  * Date: 03/06/2015
  * Time: 15:11
  */
-
+session_start();
 if (isset($_POST['login']) && isset($_POST['password'])) {
 
     $email = $_POST['login'];
@@ -22,6 +22,15 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
 
     if ($res && ($res->num_rows > 0)) {
         echo 'connexion reussie';
+        if (isset($_SESSION["PANIER"])) {
+            $a = json_decode($_SESSION['PANIER'], true);
+            if (count($a) > 0) {
+                header("location:cart.php");
+            } else {
+                header("location:index.php");
+            }
+        }
+
     } else {
         echo "connexion echouee";
         echo "Error: " . $requete . "<br>" . $connexion->error;

@@ -55,7 +55,7 @@ if (isset($_GET['nomarticle'])) {
             $_SESSION['PANIER'] = json_encode($a);
             $b = $articles[$_GET['nomarticle']];
 //        var_dump($_SESSION);
-            echo "1";
+
             echo ' <div class="cont1">
                 <div class="select">
                     <select name="';

@@ -7,8 +7,16 @@
  */
 
 
-echo "salur";
+function incrementer($i)
+{
+    $i += 2;
+}
 
-echo 'cc';
+//
+for ($i = 0; $i < 3; $i++) {
+    incrementer($i);
+    echo "$i";
+}
+
 
 ?>

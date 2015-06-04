@@ -93,11 +93,7 @@ if ($_SERVER["REQUEST_URI"] == $_SERVER['PHP_SELF']) {
 echo '</div>
          </div>
          </div>
-         <button id="browseProduct2">Browse our products</button>
-         <div class="spinner">
-             <div class="bounce1"></div>
-             <div class="bounce2"></div>
-             <div class="bounce3"></div>
+
          </div>';
 
 
