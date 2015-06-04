@@ -5,6 +5,7 @@
  * Date: 03/06/2015
  * Time: 01:09
  */
+session_start();
 echo '<html>
         <head>
         <title>LOG IN</title>
@@ -32,7 +33,7 @@ Head("");
     <form method="post" action="connexion.php">
         <input class="champinput" id="login" type="text" name="login" placeholder="Email" required="required" <br>
         <input class="champinput" id="password" type="password" name="password" placeholder="Password"
-               pattern="/^[a-z0-9_-]{6,18}$/" required="required">
+               required="required">
         <input id="signin" type="submit" value="Sign In">
     </form>
 

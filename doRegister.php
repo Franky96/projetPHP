@@ -25,6 +25,8 @@ if (isset($_POST['fistname']) && isset($_POST['lastname']) && isset($_POST['emai
 
     if ($connexion->query($requete) === TRUE) {
         echo "New record created successfully";
+        sleep(3);
+        header('location:logIn.php');
     } else {
         echo "Error: " . $requete . "<br>" . $connexion->error;
     }

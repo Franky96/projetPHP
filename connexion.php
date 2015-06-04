@@ -21,9 +21,9 @@ if (isset($_POST['login']) && isset($_POST['password'])) {
     $res = $connexion->query($requete);
 
     if ($res && ($res->num_rows > 0)) {
-        echo 'email exacte';
+        echo 'connexion reussie';
     } else {
-        echo "ca marche pas";
+        echo "connexion echouee";
         echo "Error: " . $requete . "<br>" . $connexion->error;
     }
 

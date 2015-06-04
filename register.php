@@ -5,7 +5,7 @@
  * Date: 03/06/2015
  * Time: 11:16
  */
-
+session_start();
 echo '<html>
         <head>
         <title>moreProduct</title>

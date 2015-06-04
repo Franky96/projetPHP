@@ -262,10 +262,15 @@ div ul li i {
     cursor: pointer;
 }
 
-#icons span {
+#span1 {
     font-size: 25px;
-    color: rgb(193, 193, 193);
+    color: #313131;
+}
 
+#span2 {
+    font-size: 25px;
+    color: #313131;
+    margin-left: 10px;
 }
 
 .menu ul li {
@@ -384,3 +389,23 @@ div h1 span {
 }
 
 /*************************************************/
+
+#span3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#span3 {
+    color: #fff;
+    border: 1px solid #c1c1c1;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 6px 6px;
+    position: relative;
+    bottom: 3px;
+}
+
+#span3 i {
+    font-size: 16px;
+    margin-right: 5px;
+}

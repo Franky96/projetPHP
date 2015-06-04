@@ -5,6 +5,7 @@
  * Date: 31/05/2015
  * Time: 12:14
  */
+session_start();
 require_once('init.php');
 
 echo '<html>

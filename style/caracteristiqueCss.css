@@ -47,11 +47,11 @@ body {
     cursor: pointer;
 }
 
-#icons span {
-    font-size: 25px;
-    color: rgb(193, 193, 193);
+/*#icons span {*/
+/*font-size: 25px;*/
+/*color: rgb(193, 193, 193);*/
 
-}
+/*}*/
 
 .menu ul li {
     list-style-type: none;
