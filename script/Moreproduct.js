@@ -51,17 +51,7 @@ var parite2 = 0, parite = 0, deg = 0;
 }(document, 'script', 'facebook-jssdk'));
 <!--**********************************************-->
 
-$("#span2").click(function () {
-    console.log("marche");
-    if (parite2 % 2 == 0) {
-        $(".searchbar").slideDown();
-        parite2++;
-    }
-    else {
-        $(".searchbar").slideUp();
-        parite2++;
-    }
-});
+
 function animMenu() {
     console.log("marche");
     a = document.getElementById("menuicon");
@@ -94,7 +84,7 @@ function animMenu() {
 }
 // fonction qui envoi l'url pour filtrer avec les catégories
 function geturl(element) {
-    categ = document.getElementsByClassName('sel')[0].value;
+    categ = element.value;
     url = "moreProduct.php?categ=" + categ;
     console.log(url);
     window.location.href = url;

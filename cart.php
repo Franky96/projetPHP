@@ -21,7 +21,7 @@ echo '<html>
 <div class="header">
     <div>
         <h1>
-            <a href="index.html">
+            <a href="index.php">
                 <img src="images/logo.png">
             </a>
         </h1>
@@ -167,13 +167,23 @@ if (isset($_GET['nomarticle'])) {
 echo ' </div>
         <div class="footerContenuCart">
             <div class="left">
-                <a href="moreProduct.html">Add more Products</a>
+                <a href="moreProduct.php">Add more Products</a>
             </div>
             <div class="right">
                 <span id="labeltotale">Subtotal</span>
                 <span id="totale">$220.00</span>
+
             </div>
+
         </div>
+        <div class="comment">
+                <span id="labelcomment">Special instructions for seller:</span>
+                <textarea id="textarea"></textarea>
+        </div>
+        <div class="checkout">
+                  <a id="chek" href="logIn.php">CHECK OUT</a>
+        </div>
+
     </form>
 </div>
 <script src="script/cart.js"></script>

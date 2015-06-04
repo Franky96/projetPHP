@@ -12,11 +12,16 @@ echo '<html>
         <title>moreProduct</title>
          <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
          <link rel="stylesheet" href="style/moreProductCss.css" type="text/css">
+          <link rel="stylesheet" href="style/caracteristiqueCss.css" type="text/css">
+
 
 
         </head>
 
-        <body>';
+        <body>
+        <section class="searchbar">
+            <input id="searchinput" type="search" placeholder="Search">
+        </section>';
 require_once('headerMoreproduct.php');
 Head("/ Collection");
 
@@ -98,6 +103,10 @@ echo '</div>
 require_once('footer.php');
 echo ' <script src="script/jquery-1.11.1.min.js"></script>
         <script src="script/Moreproduct.js"></script>
+        <script src="script/main.js"></script>
+        <script>
+    document.getElementById("searchinput").addEventListener("keydown", keyDownTextField, false);
+</script>
 
 </body>
 </html>';

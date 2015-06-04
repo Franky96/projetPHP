@@ -14,16 +14,7 @@ var parite2 = 0, parite = 0, deg = 0;
 }(document, 'script', 'facebook-jssdk'));
 <!--**********************************************-->
 
-$("#span2").click(function () {
-    if (parite2 % 2 == 0) {
-        $(".searchbar").slideDown();
-        parite2++;
-    }
-    else {
-        $(".searchbar").slideUp();
-        parite2++;
-    }
-});
+
 function animMenu() {
     console.log("marche");
     a = document.getElementById("menuicon");

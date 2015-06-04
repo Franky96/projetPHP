@@ -194,3 +194,48 @@ body {
 #labeltotale {
     text-align: right;
 }
+
+.comment {
+    margin-top: 20px;
+}
+
+#labelcomment {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#textarea {
+    padding-top: 3px;
+    padding-left: 3px;
+    margin-top: 0px;
+    width: 100%;
+    height: 86px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.checkout {
+    text-align: right;
+}
+
+#chek {
+    background-color: rgb(27, 161, 226);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: 45px;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    width: 160px;
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none;
+}
+
+#chek:hover {
+    background-color: crimson;
+}

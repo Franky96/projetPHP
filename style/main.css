@@ -1,19 +1,27 @@
-
 body{
     margin: 0;
     padding:0;
 }
 
+.menu ul li a {
+    text-decoration: none;
+    color: #313131;
+}
+
+.menu ul li a:hover {
+    color: #ffffff;
+}
 .searchbar{
     height: 50px;
     display:none;
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0px;
     margin-left: 10px;
 }
 .searchbar input{
     height: 100%;
     width: 100%;
-    border: 0;
+    border: 0px;
     padding-left: 2px;
     font-size: 20px;
     display: block;
@@ -23,8 +31,13 @@ body{
     color: #313131;
 }
 
+.slide1 {
+    height: 651px;
+    width: 100%;
+    position: relative;
+}
 .imageDefond{
-    height: 110%;
+    height: 100%;
     width: 100%;
     background-image: url("../images/generic-hero-background.jpg");
     background-repeat: no-repeat;
@@ -62,10 +75,10 @@ hr{
 
 .contentCenter{
     position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 195px;
-    margin-left: 731px;
+    left: 0px;
+    top: 0px;
+    margin-top: 108px;
+    margin-left: 467px;
 }
 #logo a img{
     width: 300px;height: 47px;
@@ -87,50 +100,14 @@ h2 span{
     right: 0;top: 0;
 
 }
-/**************************************/
-.slide0{
-    height: 885px;
-    width: 100%;
-    position: relative;
-}
-.slide1{
-    height: 500px;
-    background-color: white;
-}
-.slide2{
-    height: 700px;
-    background-color: #ff464f;
-    position: relative;
-    display: none;
-}
-.slide3{
-    height: 700px;
-    background-color: #64ff64;
-    position: relative;
-    display: none;
-}
+
 /*********************************************************/
 #scrolldown{
     position:absolute ;
-    bottom: -7%;
+    bottom: 10%;
     right: 3%;
     font-size: xx-large;
     color: cornflowerblue;
-}
-#scrolldown > i{
-    transition: transform 1s;
-}
-.scrollup{
-    display: inline-block;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    position: absolute;
-    right: 130px;
-    bottom: 345px;
-    transform: rotate(180deg);
-}
-#scrollup3{
-    font-size: 250%;
 }
 /*******************************************************************************************/
 
@@ -141,10 +118,13 @@ h2 span{
     right: 0;top:0;
 }
 #icons{
-    margin-left: 231px;
+    margin-left: 116px;
+
+
 }
-#span1{
-    margin-left: 25px;
+
+#icons #span1 {
+    margin-left: 20px;
 }
 #span1,#span2:hover{
     cursor: pointer;
@@ -177,7 +157,7 @@ h2 span{
 /******************************************************footer*/
 
 .content_footer{
-    height: 370px;
+    height: 373px;
     background: #3e4645;
 }
 .content1{
@@ -232,7 +212,7 @@ h2 span{
     font-weight: bold;
     color: white;
     font-size: larger;
-    font-family: arial, times new roman, georgia, serif;
+    font-family: georgia;
 }
 .content1 div ul li{
     margin-bottom: 6px;
@@ -252,29 +232,20 @@ div ul li i{
     margin-top: 37px;
 
     color: #9f9f9f;
-    font-family: Lato sans-serif;
+    font-family: Lato;
 }
 
 
 /*********************************Formulaire Inscription*****/
-#formulaire{
-    margin-top: 50px;
-}
-#formulaire > h2{
-    text-align: center;
-    font-family: arial, times new roman, georgia, serif;
-    font-size: 200%;
-    color: white;
-}
+
 #formulaireInscription {
     position: absolute;
-    left: -310px;
-    top: 0;
+    left: -300px;
+    top: 0px;
     width: 300px;
     height: 350px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    border: 3px solid #313131;
     background: transparent;
     margin-left: 3px;
 
@@ -284,7 +255,7 @@ div ul li i{
 #formulaire input:last-child {
     display: block;
     padding-left: 1px;
-    width: 25%;
+    width: 50%;
     height: 24px;
     margin: auto;
 
@@ -303,31 +274,27 @@ div ul li i{
 
 #formulaireInscription a.ouvrir {
     position: absolute;
-    right: -65px;
+    right: -70px;
     top: 68px;
     transform: rotate(270deg);
     border-radius: 0 0 8px 8px;
     padding: 10px 25px;
-    background: rgb(0, 90, 255);
+    background: #555;
     color: #fff;
     text-decoration: none;
 }
 
 #formulaireInscription a.fermer {
     position: absolute;
-    right: -65px;
+    right: -70px;
     top: 68px;
     transform: rotate(270deg);
     border-radius: 0 0 8px 8px;
     padding: 10px 25px;
-    background: rgb(0, 90, 255);
+    background: #555;
     color: #fff;
     text-decoration: none;
     display: none;
-}
-
-#formulaireInscription_clos:target #formulaireInscription {
-    left: -300px;
 }
 
 #formulaireInscription {
@@ -335,8 +302,14 @@ div ul li i{
     transition: all 1s ease-in;
 }
 
+#formulaireInscription_clos:target #formulaireInscription {
+    left: -300px;
+}
+
+
+
 #formulaireInscription:target {
-    left: -5px;
+    left: 0;
 }
 
 #formulaireInscription:target a.ouvrir {
@@ -346,193 +319,9 @@ div ul li i{
 #formulaireInscription:target a.fermer {
     display: block;
 }
-/*******************************************************/
-#formulaireInscription > a.ouvrir:hover{
-    box-shadow: 0 -1px 10px rgb(53, 53, 53) inset;
-}
-#formulaireInscription > a.fermer{
-    box-shadow: 0 -2px 22px black inset;
-}
-#formulaireConnexion > #formulaireCout > a.ouvrir:hover{
-    box-shadow: 0 -6px 15px black inset;
-
-}
-#formulaireConnexion > #formulaireCout > a.fermer{
-    box-shadow: 0 -2px 22px black inset;
-}
-#browseProduct:hover{
-    box-shadow: 0 0 10px black inset;
-}
-
-/*******************************************************/
-#formulaireC{
-    margin-top: 50px;
-}
-#formulaireC > h2{
-    text-align: center;
-    font-family: arial, times new roman, georgia, serif;
-    font-size: 200%;
-    color: white;
-}
-#formulaireConnexion{
-    position: absolute;
-    left: -310px;
-    top: 0;
-    width: 300px;
-    height: 793px;
-    background: transparent;
-    margin-left: 3px;
-
-
-}
-#formulaireCout{
-    margin-top: 550px;
-    border: 3px solid #313131;
-    padding: 0 0 22px 0;
-    width: 297px;
-    border-radius: 0 10px 10px 0;
-}
-#formulaireC input:last-child {
-    display: block;
-    padding-left: 1px;
-    width: 25%;
-    height: 24px;
-    margin: auto;
-
-}
-
-.formulaire {
-
-    display: block;
-    border-radius: 5px;
-    padding-left: 4px;
-    width: 50%;
-    height: 24px;
-    margin: auto;
-    margin-bottom: 10px;
-}
-
-#formulaireConnexion a.ouvrir {
-    position: absolute;
-    right: -84px;
-    top: 605px;
-    transform: rotate(270deg);
-    border-radius: 0 0 8px 8px;
-    padding: 10px 25px;
-    background: rgb(0, 90, 255);
-    color: #fff;
-    text-decoration: none;
-}
-
-#formulaireConnexion a.fermer {
-    position: absolute;
-    right: -65px;
-    top: 605px;
-    transform: rotate(270deg);
-    border-radius: 0 0 8px 8px;
-    padding: 10px 25px;
-    background: rgb(0, 90, 255);
-    color: #fff;
-    text-decoration: none;
-    display: none;
-}
-
-#formulaireConnexion_clos:target #formulaireConnexion {
-    left: -300px;
-}
-
-#formulaireConnexion {
-    -webkit-transition: all .5s ease-in;
-    transition: all 1s ease-in;
-}
-
-#formulaireConnexion:target {
-    left: -9px;
-}
-
-#formulaireConnexion:target a.ouvrir {
-    display: none;
-}
-
-#formulaireConnexion:target a.fermer {
-    display: block;
-}
-/****************************************************************/
-/*****************************Maps*******************************/
-#map{
-    width: 850px;
-    height: 500px;
-    margin: 100px 0 0 115px;
-    padding: 0 0 0 0;
-    display: inline-block;
-    float: left;
-}
-#map-canvas{
-    width: 850px;
-    height: 500px;
-    background-color: gray;
-    display: inline-block;
-    /*margin: 10px;*/
-}
-#map_info{
-    width: 500px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    margin: 100px 0 0 90px;
-    border-left: 3px solid white;
-    text-align: center;
-}
-#map_coor{
-    margin: 60px 0 0 0;
-    display: inline-block;
-    text-align: left;
-}
-#map_coor > h1{
-    color: white;
-    font-size: 285%;
-}
-#map_coor > dl > dt{
-    color: white;
-    font-size: 160%;
-    margin: 0 0 10px 0;
-}
-/*******************************************/
-#vid1{
-    width: 700px;
-    height: 400px;
-    margin: 100px 115px 0 0;
-    padding: 0 0 0 0;
-    display: inline-block;
-    float: right;
-}
-#vid2{
-    width: 700px;
-    height: 400px;
-    margin: 100px 0 0 115px;
-    padding: 0 0 0 0;
-    display: inline-block;
-    float: left;
-}
-#bottom_slide2{
-    position: absolute;
-    bottom: 0;
-    left: 485px;
-}
-#bottom_slide2 > h1{
-    display: inline-block;
-    color: white;
-    font-size: 400%;
-    margin: 0 440px 60px 0;
-}
-#bottom_slide2 > div{
-    display: inline-block;
-    transform: rotate(180deg);
-    font-size: 250%;
-}
 /************************************slide2*****/
 /*****************************A copier Coller***************/
-.slide1{
+.slide2 {
     height: 1050px;
 }
 #ProductWrapper {
@@ -620,11 +409,4 @@ div ul li i{
     margin-top: 14px;
 }
 
-/**************************FeaturedProductCSS***************/
-
-/***************************************************************/
-
-
-
-
-
+/****************************************/

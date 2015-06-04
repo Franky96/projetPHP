@@ -16,17 +16,17 @@ echo '<header>
 
         <div class="menu">
             <ul>
-                <li>Home</li>
-                <li>Catalog</li>
-                <li>Collection</li>
-                <li>News</li>
-                <li>About US</li>
+               <li><a href="index.php">Home</a></li>
+                        <li><a href="moreProduct.php">Catalog</a></li>
+                        <li><a href="moreProduct.php">Collection</a></li>
+                        <li>News</li>
+                        <li>About US</li>
             </ul>
         </div>
     </div>
     <div id="containerHeader">
         <h1>
-            <a href="index.html">
+            <a href="index.php">
                 <img src="images/logo.png"/>
             </a>
             <span> ' . $title . '</span>

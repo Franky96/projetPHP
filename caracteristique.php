@@ -56,6 +56,10 @@ if (array_key_exists($_GET['article'], $articles)) {
     echo '</body>
 <script src="script/jquery-1.11.1.min.js"></script>
 <script src="script/Caracteristique.js"></script>
+<script src="script/main.js"></script>
+        <script>
+    document.getElementById("searchinput").addEventListener("keydown", keyDownTextField, false);
+</script>
 </html>';
 } else {
     header('location:404.php');

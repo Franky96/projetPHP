@@ -79,22 +79,7 @@ $('#i_scrollup2').click(function(){
     $('#slide2').css('display', 'none');
     $('#bottom_slide2').hide();
 });
-/*******************google maps***************************/
 
-function google_map(){
-    var LL = new google.maps.LatLng(37.794957, -122.402836);
-    var options = {
-        center: LL,
-        zoom: 17
-    };
-    var map = new google.maps.Map(document.getElementById('map-canvas'), options);
-    var marker = new google.maps.Marker({
-        position: LL,
-        map: map,
-        title: 'CALIFORNIA'
-    });
-}
-google.maps.event.addDomListener(window, 'load',google_map);
 
 /****************ancrer slide****************************/
 
@@ -117,11 +102,18 @@ $('#menu_up2').click(function(){
 });
 
 
+//*******************************interception Clavier***************
+function dosearch(element) {
+    url = "search.php?query=" + element.value;
+    console.log(url);
+    window.location.href = url;
+}
 
 
-
-
-
-
-
+function keyDownTextField(e) {
+    var keyCode = e.keyCode;
+    if (keyCode == 13) {
+        dosearch(document.getElementById('searchinput'));
+    }
+}
 

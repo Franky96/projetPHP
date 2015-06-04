@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+}
+
+.formulaire {
+    text-align: center;
+    height: 187px;
+    width: 500px;
+    margin: auto;
+    border-bottom: #C1C1C1 dashed 1px;
+}
+
+.formulaire h2 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: #616161;
+    margin: 10px 0 5px;
+}
+
+.formulaire h4 {
+    color: rgb(145, 145, 145);
+    display: block;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    height: 24px;
+    margin-top: 0px;
+}
+
+.formulaire a {
+    -webkit-appearance: none;
+    background-color: rgb(22, 152, 208);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    width: 370px;
+
+}
+
+.formulaire a:hover {
+    background-color: #144567;
+}
+
+#connexion {
+    border: none;
+    height: 300px;
+}
+
+.champinput {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    width: 370px;
+    font-size: 18px;
+    color: #818181;
+    display: inline-block;
+    vertical-align: middle;
+
+    appearance: none;
+    padding: 11px 14px;
+    border-radius: 4px;
+    line-height: 25px;
+    background-color: rgb(250, 255, 189);
+    margin-bottom: 10px;
+    border: 1px crimson solid;
+}
+
+#signin {
+
+    -webkit-appearance: none;
+    background-color: rgb(22, 152, 208);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: background-color;
+    transition-timing-function: ease-in;
+    width: 370px;
+    border: none;
+
+}
+
+#signin:hover {
+    background-color: #144567;
+}
+
+#login:required {
+
+}
+
+

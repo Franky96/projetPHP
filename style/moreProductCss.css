@@ -10,14 +10,14 @@ body {
 
 }
 
-#ProductContent {
-
+.menu ul li a {
+    text-decoration: none;
+    color: #313131;
 }
 
-#premiere_page {
-
+.menu ul li a:hover {
+    color: #9b9b9b;
 }
-
 #ProductTitle {
     margin-bottom: 44px;
 }
